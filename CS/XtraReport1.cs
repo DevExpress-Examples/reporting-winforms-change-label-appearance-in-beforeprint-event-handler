@@ -8,7 +8,7 @@ namespace BeforePrintEvent {
             InitializeComponent();
         }
 
-        private void xrLabel_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void xrLabel_BeforePrint(object sender, System.ComponentModel.CancelEventArgs e) {
             // Obtain the current label.
             XRLabel label = (XRLabel)sender;
             

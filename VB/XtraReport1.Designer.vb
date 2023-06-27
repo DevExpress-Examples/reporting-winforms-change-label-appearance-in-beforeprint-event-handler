@@ -28,8 +28,8 @@ Namespace BeforePrintEvent
 			Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
 			Me.xrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
 			Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
-			Me.nwindDataSet1 = New BeforePrintEvent.nwindDataSet()
-			Me.orderDetailsTableAdapter = New BeforePrintEvent.nwindDataSetTableAdapters.OrderDetailsTableAdapter()
+			Me.nwindDataSet1 = New nwindDataSet()
+			Me.orderDetailsTableAdapter = New nwindDataSetTableAdapters.OrderDetailsTableAdapter()
 			Me.Total = New DevExpress.XtraReports.UI.CalculatedField()
 			Me.PageHeader = New DevExpress.XtraReports.UI.PageHeaderBand()
 			Me.xrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
@@ -51,7 +51,7 @@ Namespace BeforePrintEvent
 			' xrLabel2
 			' 
 			Me.xrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "OrderDetails.ProductName", "{0:$0}")})
-			Me.xrLabel2.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrLabel2.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F)
 			Me.xrLabel2.Location = New System.Drawing.Point(100, 0)
 			Me.xrLabel2.Name = "xrLabel2"
 			Me.xrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -65,7 +65,7 @@ Namespace BeforePrintEvent
 			' xrLabel1
 			' 
 			Me.xrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "OrderDetails.OrderID", "")})
-			Me.xrLabel1.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrLabel1.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F)
 			Me.xrLabel1.Location = New System.Drawing.Point(0, 0)
 			Me.xrLabel1.Name = "xrLabel1"
 			Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -105,7 +105,7 @@ Namespace BeforePrintEvent
 			' 
 			' xrLabel4
 			' 
-			Me.xrLabel4.Font = New System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel4.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrLabel4.Location = New System.Drawing.Point(100, 0)
 			Me.xrLabel4.Name = "xrLabel4"
 			Me.xrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -117,7 +117,7 @@ Namespace BeforePrintEvent
 			' 
 			' xrLabel3
 			' 
-			Me.xrLabel3.Font = New System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel3.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrLabel3.Location = New System.Drawing.Point(0, 0)
 			Me.xrLabel3.Name = "xrLabel3"
 			Me.xrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -129,7 +129,7 @@ Namespace BeforePrintEvent
 			' 
 			' xrLabel5
 			' 
-			Me.xrLabel5.Font = New System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrLabel5.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrLabel5.Location = New System.Drawing.Point(450, 0)
 			Me.xrLabel5.Name = "xrLabel5"
 			Me.xrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -142,7 +142,7 @@ Namespace BeforePrintEvent
 			' xrLabel6
 			' 
 			Me.xrLabel6.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() { New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "OrderDetails.Total", "{0:$0}")})
-			Me.xrLabel6.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrLabel6.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F)
 			Me.xrLabel6.Location = New System.Drawing.Point(450, 0)
 			Me.xrLabel6.Name = "xrLabel6"
 			Me.xrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -170,7 +170,7 @@ Namespace BeforePrintEvent
 
 		Private Detail As DevExpress.XtraReports.UI.DetailBand
 		Private nwindDataSet1 As nwindDataSet
-		Private orderDetailsTableAdapter As BeforePrintEvent.nwindDataSetTableAdapters.OrderDetailsTableAdapter
+		Private orderDetailsTableAdapter As nwindDataSetTableAdapters.OrderDetailsTableAdapter
 		Private Total As DevExpress.XtraReports.UI.CalculatedField
 		Private WithEvents xrLabel2 As DevExpress.XtraReports.UI.XRLabel
 		Private WithEvents xrLabel1 As DevExpress.XtraReports.UI.XRLabel

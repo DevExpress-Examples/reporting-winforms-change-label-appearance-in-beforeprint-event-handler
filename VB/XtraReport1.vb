@@ -10,7 +10,7 @@ Namespace BeforePrintEvent
 			InitializeComponent()
 		End Sub
 
-		Private Sub xrLabel_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles xrLabel2.BeforePrint, xrLabel1.BeforePrint, xrLabel6.BeforePrint
+		Private Sub xrLabel_BeforePrint(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles xrLabel2.BeforePrint, xrLabel1.BeforePrint, xrLabel6.BeforePrint
 			' Obtain the current label.
 			Dim label As XRLabel = CType(sender, XRLabel)
 
