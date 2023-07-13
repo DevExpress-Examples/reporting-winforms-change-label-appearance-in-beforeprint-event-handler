@@ -8,8 +8,6 @@
 
 This example shows how to handle the `XRlabel.BeforePrint` event, how to access the label object in the event handler, and how to customize the appearance of the label.
 
-![]()
-
 > **Note**
 > 
 > Use [binding expressions](https://docs.devexpress.com/XtraReports/403357/detailed-guide-to-devexpress-reporting/use-expressions/expressions-overview) instead of the `BeforePrint` handler  to flexibly set values for most of the properties of the report controls.
